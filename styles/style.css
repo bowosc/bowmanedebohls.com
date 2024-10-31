@@ -3,33 +3,82 @@ body {
     background-size: 150px;
     background-repeat: repeat;
     background-color: black;
+    
+}
+
+
+/* get that scrollbar outta here! */
+body::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+.body {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+
+blink {
+    animation:1s infinite steps(5, start) blink;
+}
+@keyframes blink {
+    to {visibility:hidden;}
 }
 
 .innerbody {
     width: 70%;
+    margin: 0 auto;
+    min-width: 700px;
     
-    margin: auto;
-
 }
 
-.main-header {
-    background-color: rgb(16, 16, 81);
+.header-img {
+    width: 100%;
+    
+}
 
+
+.main-header {
+    padding-top: 10px;
+    background-color: rgb(0, 0, 0);
 
     text-align: center;
     
     margin-top: 15px;
     margin-bottom: 20px;
 
-    border-width: 6px;
-    border-style: groove;
-    border-color: black;
-    width: 100%;
-
+    outline-width: 6px;
+    outline-style: groove;
+    outline-color: black;
+    
+   
     
     color: white;
     font-size: 30px;
+
+
+
+    
+    width: 100%;
 }
+
+.sidebar {
+    height: 60%;
+    width: 180px;
+    outline-width: 1px;
+    outline-style: groove;
+    outline-color: rgb(255, 255, 255);
+    margin: 5px;
+
+
+}
+
+/* mobile users dont get the sidebar */
+@media (max-width: 1340px) {
+    .sidebar {display: none;}
+}
+
+
+
 
 .grid-container {
     width: 100%;
@@ -57,6 +106,7 @@ body {
 .griddy1 {
     grid-column: 1 / span 2;
     grid-row: 1;
+    
 }
 
 .griddy2 {
