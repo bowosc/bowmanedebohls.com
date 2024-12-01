@@ -118,8 +118,6 @@ blink {
 }
 
 .gridbox {
-
-
     border-width: 6px;
     border-style: groove;
     border-color: black;
@@ -129,7 +127,14 @@ blink {
     padding-left: 10px;
     padding-right: 10px;
 
+    a {
+        color: white
+    }
+}
 
+.innergriddy {
+    width: 100%;
+    height: 100%;
 }
 
 .griddy1 {
