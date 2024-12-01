@@ -31,9 +31,35 @@ blink {
     
 }
 
+
+
 .header-img {
     width: 100%;
+}
+
+.socials-bar {
+    width: 100%;
+    height: 55px;
     
+    display: flex;
+    justify-content: space-evenly;
+
+    padding-bottom: 20px;
+
+
+    .icon {
+    
+        height: 20px;
+    }
+
+    
+}
+
+
+.construction-blob {
+    margin-top: 30%;
+    width: 100%;
+    background-image: url('images/space.png');
 }
 
 
@@ -82,7 +108,7 @@ blink {
 
 .grid-container {
     width: 100%;
-    height: 90%;
+
    
     display: grid;
 
@@ -92,6 +118,8 @@ blink {
 }
 
 .gridbox {
+
+
     border-width: 6px;
     border-style: groove;
     border-color: black;
@@ -101,12 +129,12 @@ blink {
     padding-left: 10px;
     padding-right: 10px;
 
+
 }
 
 .griddy1 {
     grid-column: 1 / span 2;
     grid-row: 1;
-    
 }
 
 .griddy2 {
@@ -132,4 +160,21 @@ blink {
 .griddy6 {
     grid-column: 4;
     grid-row: 3;
+}
+
+
+
+.griddy7 {
+    grid-column: 3 / span 2;
+    grid-row: 4;
+}
+
+.griddy8 {
+    grid-column: 1 / span 2;
+    grid-row: 4 / span 2;
+}
+
+.griddy9 {
+    grid-column: 3 / span 2;
+    grid-row: 5;
 }
