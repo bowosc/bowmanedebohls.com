@@ -1,0 +1,205 @@
+body {
+    background-size: 100vw;
+    background-repeat: repeat;
+    background-image: url('images/ine_background.png');
+    font-family: inter;
+    color: #313130;
+    min-width: 1010px;
+}
+
+a {
+    text-decoration: none;
+    color: #313130;
+}
+
+.footer {
+    bottom: 0;
+    margin-bottom: 10px;
+
+    margin: auto;
+
+    text-align: center;
+    color: #898578;
+}
+
+
+
+
+
+
+.main-lane {
+    width: 1000px;
+    margin: auto;
+    padding-bottom: 100px;
+
+}
+
+.pp-popup {
+    width: 100%;
+    height: 500px;
+    background-image: url('images/ine_popup.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    box-sizing:content-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+
+    /* 
+    Careful with these paddings! They're manually set so that the text stays in the background image. 
+    Yes, this is bad practice. Sorry, mobile users.
+    - past Bowie
+    */
+
+    padding-left: 25px;
+    padding-right: 35px;
+
+    margin-bottom: 100px;
+}
+
+.pp-popup.untitled {
+    background-image: url('images/ine-untitled-popup.png');
+}
+
+.pp-title {
+    padding-top: 25px;
+    font-size:30px;
+    
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    letter-spacing: 1px;
+
+}
+
+.pp-main {
+    padding-top: 20px;
+    height: 380px;
+}
+
+
+
+.big-title {
+    text-align: center;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+
+
+/* main page stuff */
+
+.top-display {
+    width: 95%;
+    /* this is bc the imagery gives the appeance of an offset if it's truly centered */
+    display: flex;
+}
+
+
+.name-header {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.header-left {  
+    text-align: center;
+    width: 50%;
+
+
+}
+.header-right {
+    width: 50%;
+    padding: 10px;
+}
+
+.header-menu{
+    
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-row: auto auto;
+    margin-top: 50px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+
+    .box {
+        img {
+            height:130px;
+        }
+
+        padding-top:20px;
+        border-radius:10px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        text-align: center;
+        background-color: #F2D3D0;
+        box-shadow: #373631 5px 5px;
+    }
+  
+  }
+
+.icon-stack {
+    position:absolute;
+    float: left;
+    width: 60px;
+
+    img {
+        height: 60px;
+    }
+
+}
+
+.icon-stack-spread {
+    padding: 5px;
+}
+
+
+
+
+/* construction stuff */
+
+.under-construction {
+    
+    margin: auto;
+    margin-top:5%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+.video-insert {
+
+    right: 0; 
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+
+    z-index: -100;
+    background-size: cover;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+@media (max-width: 1000px) {
+    /* do mobile stuff, nothing real here yet*/
+    .bg {
+        background-size: 2000px; 
+    }
+}
+
+@media (max-width: 1150px) {
+    .name-header {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}

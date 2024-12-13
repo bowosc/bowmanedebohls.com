@@ -1,9 +1,7 @@
 body {
-    background-image: url('styles/images/space.png');
     background-size: 150px;
     background-repeat: repeat;
     background-color: black;
-    
 }
 
 
@@ -28,7 +26,6 @@ blink {
     width: 70%;
     margin: 0 auto;
     min-width: 700px;
-    
 }
 
 
@@ -124,9 +121,6 @@ blink {
     color: white;
     background-color: rgb(15, 9, 49);
 
-    padding-left: 10px;
-    padding-right: 10px;
-
     a {
         color: white
     }
@@ -135,11 +129,14 @@ blink {
 .innergriddy {
     width: 100%;
     height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .griddy1 {
     grid-column: 1 / span 2;
     grid-row: 1;
+    background-image: url("images/main_icon_resume.jpg");
 }
 
 .griddy2 {

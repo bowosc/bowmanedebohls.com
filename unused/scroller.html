@@ -1,0 +1,100 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>page</title>
+    <link href="styles/scroller.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <canvas id="scrollvid"></canvas>
+    <div id="1" class="gp1l">
+        <h1>Hi! I'm Bowman Edebohls,</h1>
+    </div>
+
+    <div id="1" class="gp1r" style="padding-top: 300px">
+        <h2>and this is my little slice of the blogosphere.</h2>
+    </div>
+
+    <div id="1" class="gp1l" style="padding-top: 600px; width: 600px;">
+        <h1>First, a little about me.</h1>
+        <h2>
+            I'm currently studying 
+            <span class="resumehighlight">Computer Engineering</span> 
+        </h2>
+        <h2>
+            at 
+            <a href="https://en.wikipedia.org/wiki/California_Polytechnic_State_University,_San_Luis_Obispo"><span class="resumehighlight">Cal Poly SLO</span></a>.
+        </h2>
+    </div>
+    <div id="1" class="gp1r" style="padding-top: 700px; width: 500px;">
+      <h2>
+          I work on the <a href="https://ceng.calpoly.edu/connection/2022/11/star-wars-droid-coming-to-cal-poly/"><span class="resumehighlight">Astromech Project</span></a> 
+          with the <br>
+          <span class="resumehighlight">Cal Poly robotics club,</span>
+        electrical subteam.<br>
+        
+        We're currently wiring and programming an R2-D2 - style robot, with the end goal of it being fully autonomous.
+      </h2> 
+  </div>
+
+
+    
+
+    <script>
+      const html = document.documentElement;
+      const canvas = document.getElementById("scrollvid");
+      const context = canvas.getContext("2d");
+
+      const frameCount = 95; // set to total amount of frames
+      const currentFrame = index => (
+        `styles/framecycles/${index.toString().padStart(4, '0')}.png` //padstart is weird - check docs if it screws something up.
+      )
+
+      /*
+      const frameCount = 148;
+      const currentFrame = index => (
+        `https://www.apple.com/105/media/us/airpods-pro/2019/1299e2f5_9206_4470_b28e_08307a42f19b/anim/sequence/large/01-hero-lightpass/${index.toString().padStart(4, '0')}.jpg`
+      )
+      */
+
+      const preloadImages = () => {
+        for (let i = 1; i < frameCount; i++) {
+          const img = new Image();
+          img.src = currentFrame(i);
+        }
+      };
+
+      const img = new Image()
+      img.src = currentFrame(1);
+      canvas.width=1158;
+      canvas.height=770;
+      
+      img.onload=function(){
+        context.drawImage(img, 0, 0);
+      }
+
+      const updateImage = index => {
+        img.src = currentFrame(index);
+        context.drawImage(img, 0, 0);
+      }
+
+      window.addEventListener('scroll', () => {  
+        const scrollTop = html.scrollTop;
+        const maxScrollTop = html.scrollHeight - window.innerHeight;
+        const scrollFraction = scrollTop / maxScrollTop;
+        const frameIndex = Math.min(
+          frameCount - 1,
+          Math.ceil(scrollFraction * frameCount)
+        );
+        
+        requestAnimationFrame(() => updateImage(frameIndex + 1))
+
+        //elementA = document.getElementById("1")
+        //elementA.visibilityState = "hidden"
+
+      });
+
+      preloadImages()
+    </script>
+  </body>
+</html>
