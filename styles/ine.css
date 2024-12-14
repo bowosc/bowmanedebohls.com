@@ -55,7 +55,7 @@ a {
     padding-left: 25px;
     padding-right: 35px;
 
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 
 .pp-popup.untitled {
@@ -74,7 +74,10 @@ a {
 }
 
 .pp-main {
-    padding-top: 20px;
+
+
+    font-size: 24px;
+    padding-top: 13px;
     height: 380px;
 }
 
