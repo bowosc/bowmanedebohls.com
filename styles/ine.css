@@ -1,5 +1,8 @@
 body {
-    background-size: 100vw;
+    background-position: center top;
+
+    background-size: cover;
+
     background-repeat: repeat;
     background-image: url('images/ine_background.png');
     font-family: inter;
@@ -31,7 +34,6 @@ a {
     width: 1000px;
     margin: auto;
     padding-bottom: 100px;
-
 }
 
 .pp-popup {
@@ -52,7 +54,7 @@ a {
     - past Bowie
     */
 
-    padding-left: 25px;
+    padding-left: 23px;
     padding-right: 35px;
 
     margin-bottom: 80px;
@@ -74,12 +76,30 @@ a {
 }
 
 .pp-main {
-
-
-    font-size: 24px;
-    padding-top: 13px;
+    font-size: 20px;
+    padding-top: 9px;
     height: 380px;
+
+    img {
+        border: 3px inset #F5EAD4;
+        border-width: 10px;
+    }
+
+    .righty {
+        float:right;
+        margin-left: 10px;
+    }
+    .lefty {
+        float:left;
+        margin-right: 10px;
+    }
+
+
 }
+
+
+
+
 
 
 
@@ -131,6 +151,14 @@ a {
     .box {
         img {
             height:130px;
+        }
+
+        a {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1; /* Ensures the link is on top */
         }
 
         padding-top:20px;
@@ -187,7 +215,81 @@ a {
     overflow: hidden;
 }
 
+/* Portfolio page stuff */
 
+figure {
+
+    flex-flow: column;
+    padding: 5px;
+    margin: auto;
+
+
+}
+
+figcaption {
+    font: italic smaller sans-serif;
+    overflow: hidden;
+    text-align: center;
+}
+
+.cornernav {
+    position: absolute;
+    float: left;
+    width: 150px;
+    height: 150px;
+    background-image: url("images/bowie-icon.png");
+    background-size: cover;
+
+    
+}
+
+
+
+/* BELOW IS UNUSED */
+.mini-menu-wrapper{
+
+
+    position:absolute;
+    float: left;
+
+}
+
+.mini-menu{
+    position: absolute;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-row: auto auto;
+    
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    height: 170px;
+    width: 170px;
+    background-color: red;
+    .box {
+        a {
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+        
+        img {
+            
+            margin: auto;
+            height:50px;
+
+        }
+
+        padding-top: 7px;
+        border-radius:10px;
+        display:flex;
+        font-size: smaller;
+        text-align: center;
+        background-color: #F2D3D0;
+        box-shadow: #373631 5px 5px;
+    }
+  
+  }
+/* ABOVE IS UNUSED */
 
 
 
