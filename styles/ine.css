@@ -98,11 +98,24 @@ a {
 }
 
 
+.img-gallery {
+    display:flex; 
+    justify-content:space-evenly; 
+    padding-top: 15px;
+}
+
+.img-gallery img {
+    height: 100%;
+}
 
 
 
 
 
+.titler{
+    position: relative;
+    width: 100%;
+}
 .big-title {
     text-align: center;
     width: 100%;
@@ -110,7 +123,20 @@ a {
     padding-bottom: 50px;
     font-weight: bold;
     font-size: 60px;
+
+
+
 }
+.bg-image {
+    position: absolute;
+    margin:auto;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.2; /* Adjust the opacity */
+    z-index: -1; /* Keep it behind other content */
+  }
 
 
 
@@ -145,38 +171,51 @@ a {
     grid-template-columns: 50% 50%;
     grid-row: auto auto;
     margin-top: 50px;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
 
-    .box {
-        img {
-            height:130px;
-        }
+    gap: 20px;
 
-        a {
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 1; /* Ensures the link is on top */
-        }
-
-        padding-top:20px;
-        border-radius:10px;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        text-align: center;
-        background-color: #F2D3D0;
-        box-shadow: #373631 5px 5px;
-    }
   
   }
+
+.header-menu .box {
+    position: relative;
+    padding-top: 20px;
+
+    border-radius:10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align: center;
+    background-color: #F2D3D0;
+    box-shadow: #373631 5px 5px;
+}
+
+.header-menu .box:hover {
+    background-color: rgb(202, 176, 173);
+}
+
+.header-menu .box img {
+    padding-top: 20px;
+    height:130px;
+}
+
+.header-menu .box a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Ensures the link is on top */
+}
+
+
+
+
 
 .icon-stack {
     position:absolute;
     float: left;
-    width: 60px;
+    width: 80px;
     
 
     
@@ -188,12 +227,13 @@ a {
     height: 100%;
 
     img {
-        height: 60px;
+        height: 80px;
     }
 }
 
 .icon-stack-spread :hover {
-    background-color: rebeccapurple;
+    padding-left: 10px;
+
 }
 
 
@@ -203,7 +243,6 @@ a {
 .under-construction {
     
     margin: auto;
-    margin-top:5%;
     text-align: center;
     font-size: 30px;
     font-weight: bold;
@@ -342,25 +381,35 @@ figcaption {
 }
 
 .beyond-list-wrapper {
-    width: 40%;
+    width: 80%;
     margin: auto;
+    border-style: outset;
+    border-width: 5px;
+    border-radius: 50px;
 }
 .beyond-list {
 
     font-size: xx-large;
 
-    li {
-        list-style-type: "";
-        padding-bottom: 30px;
 
-        display: flex;
+}
 
-        align-items: center; /* Align vertical */
-        img {
-            height: 80px;
-            padding-right: 30px;
-        }
+.beyond-list li {
+    list-style-type: "";
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    display: flex;
+
+    align-items: center; /* Align vertical */
+    img {
+        height: 80px;
+        padding-right: 30px;
     }
+}
+
+.beyond-list :hover {
+    text-shadow: 2px 2px rgb(168, 168, 168);
 
 }
 
