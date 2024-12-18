@@ -114,7 +114,9 @@ a {
 
 .titler{
     position: relative;
-    width: 100%;
+    width: 100%; 
+    margin: auto;
+    z-index: -1; /* this is like this because it used to cover up the icons on the side. */
 }
 .big-title {
     text-align: center;
@@ -415,16 +417,17 @@ figcaption {
 
 
 
-@media (max-width: 1000px) {
-    /* do mobile stuff, nothing real here yet*/
-    .bg {
-        background-size: 2000px; 
-    }
-}
 
-@media (max-width: 1150px) {
+
+@media (max-width: 1200px) {
     .name-header {
         padding-left: 10%;
         padding-right: 10%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .beyond-body {
+        height: 200vh;
     }
 }
