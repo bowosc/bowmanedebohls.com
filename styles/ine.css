@@ -177,17 +177,24 @@ a {
     position:absolute;
     float: left;
     width: 60px;
+    
 
-    img {
-        height: 60px;
-    }
+    
 
 }
 
 .icon-stack-spread {
     padding: 5px;
+    height: 100%;
+
+    img {
+        height: 60px;
+    }
 }
 
+.icon-stack-spread :hover {
+    background-color: rebeccapurple;
+}
 
 
 
@@ -217,12 +224,46 @@ a {
 
 /* Portfolio page stuff */
 
+.split {
+
+
+
+    width: 50%;
+    text-align: left;
+    
+
+    height: 100%;
+    padding-top: 10px;
+
+    .toptitle {
+        text-align: center;
+        font-size: 24px; 
+        font-weight: bold;
+    }
+
+    .fav {
+        list-style-type: "⭐ ";
+    }
+
+    ul {
+        margin-top: 5px;
+    }
+    li {
+        margin-top: 3px;
+        font-weight: 900;
+        
+    }
+    i {
+        font-weight: 100;
+    }
+}
+
 figure {
 
     flex-flow: column;
     padding: 5px;
     margin: auto;
-
+    text-align: center;
 
 }
 
@@ -292,6 +333,36 @@ figcaption {
 /* ABOVE IS UNUSED */
 
 
+/* Beyond stuff */
+
+.centered {
+    margin:auto;
+    width: 100%;
+    text-align:  center;
+}
+
+.beyond-list-wrapper {
+    width: 40%;
+    margin: auto;
+}
+.beyond-list {
+
+    font-size: xx-large;
+
+    li {
+        list-style-type: "";
+        padding-bottom: 30px;
+
+        display: flex;
+
+        align-items: center; /* Align vertical */
+        img {
+            height: 80px;
+            padding-right: 30px;
+        }
+    }
+
+}
 
 
 
