@@ -15,7 +15,7 @@ a {
     color: #313130;
 }
 
-.footer {
+.footer a {
     bottom: 0;
     margin-bottom: 10px;
 
@@ -431,3 +431,16 @@ figcaption {
         height: 200vh;
     }
 }
+
+@media screen and (max-width : 1920px){
+    .mobile-warning{
+        display:none
+    }
+  }
+
+@media screen and (max-width : 906px){
+   .mobile-warning{
+        display:none
+    }
+  }
+
