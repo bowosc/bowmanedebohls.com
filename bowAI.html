@@ -2,12 +2,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Bowman Edebohls</title>
+    <title>Bowman Edebohls - BowAI</title>
     <link href="styles/ine.css" rel="stylesheet" type="text/css" />
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
 </head>
 
 <body>
+    <script src="bowAI.js" type="module" defer></script>
     <div class="icon-stack">
         <div class="icon-stack-spread">
             <a href="/">
@@ -37,18 +38,20 @@
     </div>
 
     
-    <div class="main-lane">
-        <div class="big-title">
-            Main Title
+    <div class="main-lane" style="padding-bottom: 0px;">
+
+        <div class="big-title" style="padding: 15px;">
+            BowAI
         </div>
+
         <div class="pp-popup">
-            <div class="pp-title">
-                Placeholder title
+            <div class="response-display">
+                <div style="margin: auto; top: 50%; color:rgb(0, 0, 0);">Response goes here...</div>
             </div>
-            <div class="pp-main">
-                <p>Lorem ipsum</p>
+            <div class="input-display">
+                <textarea autocomplete="off" maxlength="255" placeholder="Ask me a question about Bowie!" ></textarea>
+            </div>
                 
-            </div>
         </div>
     </div>
 
