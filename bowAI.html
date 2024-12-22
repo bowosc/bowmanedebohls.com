@@ -42,16 +42,18 @@
 
         <div class="big-title" style="padding: 15px;">
             BowAI
-        </div>
+        </div>  
 
+
+        <form action="/submit" method="POST">
         <div class="pp-popup">
             <div class="response-display">
                 <div style="margin: auto; top: 50%; color:rgb(0, 0, 0);">Response goes here...</div>
             </div>
-            <div class="input-display">
-                <textarea autocomplete="off" maxlength="255" placeholder="Ask me a question about Bowie!" ></textarea>
+            <div class="input-display" id="aiInput">
+                <textarea autocomplete="off" maxlength="255" placeholder="Ask me a question about Bowie!" autofocus></textarea>
             </div>
-                
+        </form>
         </div>
     </div>
 
