@@ -144,23 +144,22 @@ because of the padding for some reason
 
 .pp-main {
     font-size: 20px;
-    height: 380px;
+    overflow: hidden;
+}
 
-    img {
-        border: 3px inset #F5EAD4;
-        border-width: 10px;
-    }
+.pp-main img {
+    border: 3px inset #F5EAD4;
+    border-width: 10px;
+}
 
-    .righty {
-        float:right;
-        margin-left: 10px;
-    }
-    .lefty {
-        float:left;
-        margin-right: 10px;
-    }
+.pp-main .righty {
+    float:right;
+    margin-left: 10px;
+}
 
-
+.pp-main .lefty {
+    float:left;
+    margin-right: 10px;
 }
 
 
@@ -341,7 +340,6 @@ because of the padding for some reason
     text-align: left;
     
 
-    height: 100%;
     padding-top: 10px;
 
     .toptitle {
