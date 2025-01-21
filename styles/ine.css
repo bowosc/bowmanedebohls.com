@@ -41,6 +41,7 @@ a {
     background-color: #FBF5E7;
 
     padding: 25px;
+    padding-top:0px;
 
     margin-bottom: 50px;
 
@@ -88,7 +89,8 @@ a {
 }
 
 .pp-title {
-
+    margin-top:25px;
+    
     font-size:30px;
     
     text-align: center;
@@ -160,7 +162,7 @@ a {
     background-position: center;
     opacity: 0.2; /* Adjust the opacity */
     z-index: -1; /* Keep it behind other content */
-  }
+}
 
 
 
@@ -251,7 +253,18 @@ a {
 
 .icon-stack-spread :hover {
     padding-left: 10px;
+}
 
+.project-github-icon {
+    height:auto;
+    padding-right: 5px;
+
+}
+
+.project-github-icon img {
+    height: 67px;
+    width: 67px;
+    border-width: 0px;
 }
 
 
@@ -284,9 +297,6 @@ a {
 /* Portfolio page stuff */
 
 .split {
-
-
-
     width: 50%;
     text-align: left;
     
