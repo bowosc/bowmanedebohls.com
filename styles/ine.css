@@ -54,40 +54,6 @@ a {
     box-shadow: 12px 12px #313130;
 }
 
-
-.oldmain {
-    
-    /* unused! i hope. this version sucked */
-
-    width: 100%;
-    height: 500px;
-    background-image: url('images/ine_popup.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-
-
-    box-sizing:content-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-
-    /* 
-    Careful with these paddings! They're manually set so that the text stays in the background image. 
-    Yes, this is bad practice. Sorry, mobile users.
-    - past Bowie
-    */
-
-    padding: 25px;
-
-    margin-bottom: 80px;
-}
-
-.pp-popup.untitled {
-    
-    /* unused! i hope. this version sucked */
-
-    background-image: url('images/ine-untitled-popup.png');
-}
-
 .pp-title {
     margin-top:25px;
     
@@ -105,30 +71,41 @@ a {
     overflow: hidden;
 }
 
-.pp-main img {
-    border: 3px inset #F5EAD4;
-    border-width: 10px;
+.pp-main .softcorner {
+    border-color: #313130;
+    border-width: 0px;
+    border-radius: 30px;
+}
+
+.pp-main .sharpcorner {
+    border-color: #313130;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 0px;
 }
 
 .pp-main .righty {
     float:right;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .pp-main .lefty {
     float:left;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 
 .img-gallery {
+    
     display:flex; 
     justify-content:space-evenly; 
     padding-top: 15px;
+    
 }
 
 .img-gallery img {
     max-height: 100%;
+    border-radius: 30px;
 }
 
 
@@ -327,7 +304,6 @@ a {
 }
 
 figure {
-
     flex-flow: column;
     padding: 5px;
     margin: auto;
@@ -336,6 +312,7 @@ figure {
 }
 
 figcaption {
+    padding-top: 8px;
     font: italic smaller sans-serif;
     overflow: hidden;
     text-align: center;
@@ -352,53 +329,6 @@ figcaption {
     
 }
 
-
-
-/* BELOW IS UNUSED */
-.mini-menu-wrapper{
-
-
-    position:absolute;
-    float: left;
-
-}
-
-.mini-menu{
-    position: absolute;
-    display:grid;
-    grid-template-columns: 50% 50%;
-    grid-row: auto auto;
-    
-    grid-column-gap: 5px;
-    grid-row-gap: 5px;
-    height: 170px;
-    width: 170px;
-    background-color: red;
-    .box {
-        a {
-            width: 100%;
-            height: 100%;
-            z-index: 1;
-        }
-        
-        img {
-            
-            margin: auto;
-            height:50px;
-
-        }
-
-        padding-top: 7px;
-        border-radius:10px;
-        display:flex;
-        font-size: smaller;
-        text-align: center;
-        background-color: #F2D3D0;
-        box-shadow: #373631 5px 5px;
-    }
-  
-  }
-/* ABOVE IS UNUSED */
 
 
 /* Beyond stuff */
