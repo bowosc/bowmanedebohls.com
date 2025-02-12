@@ -1,9 +1,9 @@
 body {
     background-position: center top;
 
-    background-size: cover;
-
-    background-repeat: repeat;
+    background-repeat: repeat-y; /* Repeat only vertically */
+    background-size: cover; /* Cover full width, maintain height */
+    background-position: top center; /* Align properly */
     background-image: url('images/ine_background.png');
     font-family: inter;
     color: #313130;
@@ -95,17 +95,23 @@ a {
 }
 
 
+
+
+
+
 .img-gallery {
-    
     display:flex; 
     justify-content:space-evenly; 
     padding-top: 15px;
-    
+    max-width: 100%;
 }
 
 .img-gallery img {
     max-height: 100%;
+    flex-shrink: 1;
     border-radius: 30px;
+    min-width: 0; /* Fixes some Flexbox shrinking issues */
+    object-fit: contain; 
 }
 
 
@@ -160,9 +166,8 @@ a {
 .header-left {  
     text-align: center;
     width: 50%;
-
-
 }
+
 .header-right {
     width: 50%;
     padding: 10px;
@@ -443,30 +448,16 @@ figcaption {
 
 
 
-
-
-
 @media (max-width: 1200px) {
     .name-header {
         font-size: 43px;
     }
-}
-
-@media (max-width: 1000px) {
+    
     .beyond-body {
         height: 200vh;
+        width: 100wh;
+    }
+    .pp-main{
+        transition: none;
     }
 }
-
-@media screen and (max-width : 1920px){
-    .mobile-warning{
-        display:none
-    }
-  }
-
-@media screen and (max-width : 906px){
-   .mobile-warning{
-        display:none
-    }
-  }
-
