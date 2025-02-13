@@ -1,9 +1,9 @@
 body {
     background-position: center top;
 
-    background-repeat: repeat-y; /* Repeat only vertically */
-    background-size: cover; /* Cover full width, maintain height */
-    background-position: top center; /* Align properly */
+    background-repeat: repeat-y;
+    background-size: cover; 
+    background-position: top center; 
     background-image: url('images/ine_background.png');
     font-family: inter;
     color: #313130;
@@ -20,6 +20,7 @@ a {
 }
 
 .footer a {
+    font-size: 15px;
     bottom: 0;
     margin-bottom: 10px;
 
@@ -94,7 +95,22 @@ a {
     margin-right: 20px;
 }
 
+.minifooter {
+    margin-top:45px; 
+    font-size: 18px; 
+    text-align: right;
+}
 
+.project-github-icon {
+    float: left;
+}
+
+.project-github-icon img {
+    height: 70px;
+    width: 70px;
+    border-width: 0px;
+    float: left;
+}
 
 
 
@@ -104,6 +120,8 @@ a {
     justify-content:space-evenly; 
     padding-top: 15px;
     max-width: 100%;
+    height: 300px; 
+    padding-top: 25px;
 }
 
 .img-gallery img {
@@ -237,17 +255,7 @@ a {
     padding-left: 10px;
 }
 
-.project-github-icon {
-    height:auto;
-    padding-right: 5px;
 
-}
-
-.project-github-icon img {
-    height: 67px;
-    width: 67px;
-    border-width: 0px;
-}
 
 
 
@@ -259,7 +267,15 @@ a {
     text-align: center;
     font-size: 30px;
     font-weight: bold;
+    height: 100%; 
+    padding-bottom: 0px; 
+    padding-top:1%;
+}
 
+@media (max-width: 1200px) {
+    .under-construction {
+        height: 200vh;
+    }
 }
 
 
@@ -307,6 +323,15 @@ a {
         font-weight: 100;
     }
 }
+
+.floatsplitleft{
+    float:left;
+}
+
+.floatsplitright {
+    float:right;
+}
+
 
 figure {
     flex-flow: column;
@@ -446,18 +471,150 @@ figcaption {
 }
 
 
+/* IMMYS */
+/* proj */
+.constantmenu {
+    max-width: 450px;
+}
+
+
+.astromech {
+    max-width: 250px;
+}
+
+
+.sje  {
+    max-width: 450px;
+}
+
+
+.soundbo {
+    max-width: 450px;
+}
+
+/* hobb */
+.pugetselfie {
+    max-height: 410px;
+}
+
+.ccec22 {
+    max-height: 300px;
+}
+
+.mcwasteland {
+    max-height: 230px;
+}
+
+
+
 
 
 @media (max-width: 1200px) {
+    
     .name-header {
         font-size: 43px;
+        margin-bottom: 0px;
+    }
+
+    .img-gallery{
+        display: block;
+        justify-content: none;
+        height: auto;
+
+    }
+
+    .img-gallery img{
+        width: 100%;
+        margin-bottom: 30px;
     }
     
+
     .beyond-body {
         height: 200vh;
         width: 100wh;
     }
+
     .pp-main{
-        transition: none;
+        font-size: 40px;
+        padding-bottom: 30px;
     }
+
+
+    .pp-title{
+        font-size: 70px;
+        margin-bottom: 10px;
+        max-height: none;
+        height: auto;
+    }
+
+    .pp-main .righty {
+        float: none;
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+
+    .pp-main .lefty {
+        float:none;
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+
+    .pp-main .immy {
+        max-width: 100%;
+        max-height: none;
+    }
+
+    figcaption {
+        margin-top: 20px;
+    }
+
+    .name-header{
+        font-size: 50px;
+    }
+    .big-title{
+        font-size: 120px;
+        margin-bottom: 30px;
+    }
+
+    .split .toptitle {
+        font-size: 50px;
+        padding: 10px;
+    }
+
+    .split{
+        width: 100%;
+    }
+
+    .floatsplitleft{
+        float:none;
+    }
+
+    .floatsplitright{
+        float:none;
+    }
+    
+
+    .project-github-icon {
+        display: none;
+    }
+    
+    .project-github-icon img {
+        height: 80px;
+        width: 80px;
+        padding-right: 20px;
+        
+    }
+
+    .under-construction {
+        font-size: 60px;
+    }
+
+    .minifooter {
+        font-size: 30px; 
+    }
+
+    .footer a {
+        font-size:35px;
+    }
+
 }
