@@ -272,7 +272,7 @@ a {
     padding-top:1%;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 480px) {
     .under-construction {
         height: 200vh;
     }
@@ -507,15 +507,16 @@ figcaption {
 
 
 
-
-
 @media (max-width: 1200px) {
-    
     .name-header {
         font-size: 43px;
-        margin-bottom: 0px;
     }
 
+}
+
+@media (max-width: 480px) {
+    
+    
     .img-gallery{
         display: block;
         justify-content: none;
