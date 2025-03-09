@@ -4,7 +4,7 @@ body {
     background-repeat: repeat-y;
     background-size: cover; 
     background-position: top center; 
-    background-image: url('images/ine_background.png');
+    background: url('images/ine_background.png');
     font-family: inter;
     color: #313130;
     min-width: 1010px;
@@ -180,6 +180,7 @@ a {
 .name-header {
     font-size: 50px;
     font-weight: bold;
+
 }
 
 .header-left {  
@@ -515,8 +516,14 @@ figcaption {
 
 }
 
+/*  MOBLE-LAST DESIGN (intentional) */
 @media (max-width: 480px) {
-    
+    .notshownonmobile {
+        display: none;
+    }
+    .body {
+        background-clip:conte nt-box;
+    }
     
     .img-gallery{
         display: block;
@@ -572,6 +579,7 @@ figcaption {
 
     .name-header{
         font-size: 50px;
+        margin-bottom: 20px;
     }
     .big-title{
         font-size: 120px;
