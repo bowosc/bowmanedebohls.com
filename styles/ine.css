@@ -192,7 +192,7 @@ a {
 }
 
 .mobile-name-header img {
-    width: 80%;
+    width: 100%;
     border-radius: 30px;
     border-style:groove;
     border-width: 7px;
@@ -272,9 +272,10 @@ a {
     padding: 5px;
     height: 100%;
 
-    img {
-        height: 80px;
-    }
+}
+
+.icon-stack-spread img {
+    height: 80px;
 }
 
 .icon-stack-spread :hover {
@@ -547,12 +548,39 @@ figcaption {
 /*  MOBLE-LAST DESIGN (intentional) */
 @media (max-width: 480px) {
 
-    .notshownonmobile {
-        display: none;
+    .titler {
+        margin-top: 20px;
     }
 
-    .onlyshownonmobile {
-        display:block;
+    .icon-stack {
+        position:fixed;
+        
+        width: 100%;
+        bottom:0;
+        display: flex;
+        
+        background: rgba(237, 231, 219, 0.45);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(9.6px);
+        -webkit-backdrop-filter: blur(9.6px);
+        
+    }
+    
+    .icon-stack-spread {
+        position: relative;
+        padding: 7px;
+        height: 100%;
+        display: flex;
+        width: 100%; /* Ensure it takes full width */
+        justify-content: space-between; /* Distributes items evenly */
+        align-items: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    
+    .icon-stack-spread img {
+        height: 170px;
     }
 
     
@@ -617,13 +645,21 @@ figcaption {
     .header-right{
         width: 100%;
         height: 560px;
+        margin-left:10px;
+        /* 
+        Box-shadow of the txt divs makes 
+        this look off-center, so we have to actually 
+        off-center it the other way to make it look normal.
+        */
         
     }
 
     .header-menu .box {
-        font-size: 25px;
-        box-shadow: #373631 10px 10px;
-        margin: 5px;
+        font-size: 30px;
+        border-width: 2px;
+        border-style: solid;
+        border-color: #373631;
+        padding: 5px;
     }
 
     .header-menu .box .img {
@@ -674,6 +710,14 @@ figcaption {
 
     .footer a {
         font-size:35px;
+    }
+
+    .notshownonmobile {
+        display: none;
+    }
+
+    .onlyshownonmobile {
+        display:block;
     }
 
 }
