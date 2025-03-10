@@ -259,7 +259,11 @@ a {
 }
 
 
-
+.menucaption {
+    font-size: 40px; 
+    text-align: center;
+    display: none;
+}
 
 
 .icon-stack {
@@ -541,6 +545,7 @@ figcaption {
 
 }
 
+
 .onlyshownonmobile {
     display: none;
 }
@@ -581,6 +586,14 @@ figcaption {
     
     .icon-stack-spread img {
         height: 170px;
+    }
+
+    .icon-stack-spread :hover {
+        padding-left: 0px;
+    }
+
+    .menucaption {
+        display: block;
     }
 
     
