@@ -1,10 +1,12 @@
 body {
-    background-position: center top;
-
-    background-repeat: repeat-y;
-    background-size: cover; 
-    background-position: top center; 
     background: url('images/ine_background.png');
+    background-position: center top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: repeat-y;
+    
     font-family: inter;
     color: #313130;
     min-width: 1010px;
@@ -17,6 +19,12 @@ div {
 a {
     text-decoration: none;
     color: #313130;
+}
+
+.static {
+
+    overflow:hidden;
+    height: 2000px;
 }
 
 .footer a {
@@ -407,6 +415,7 @@ figcaption {
     border-width: 5px;
     border-radius: 50px;
 }
+
 .beyond-list {
 
     font-size: xx-large;
@@ -422,10 +431,12 @@ figcaption {
     display: flex;
 
     align-items: center; /* Align vertical */
-    img {
-        height: 80px;
-        padding-right: 30px;
-    }
+    
+}
+
+.beyond-list li img {
+    height: 80px;
+    padding-right: 30px;
 }
 
 .beyond-list :hover {
@@ -610,10 +621,7 @@ figcaption {
     }
     
 
-    .beyond-body {
-        height: 200vh;
-        width: 100wh;
-    }
+    
 
     .pp-main{
         font-size: 40px;
@@ -713,6 +721,21 @@ figcaption {
         
     }
 
+    .beyond-list-wrapper{
+        width: 100%;
+    }
+
+    .beyond-list a {
+        font-size: 40px;
+
+    }
+
+
+    .beyond-list li img {
+        height: 150px;
+        padding-right: 30px;
+    }
+
     .under-construction {
         font-size: 60px;
     }
@@ -732,5 +755,6 @@ figcaption {
     .onlyshownonmobile {
         display:block;
     }
+
 
 }

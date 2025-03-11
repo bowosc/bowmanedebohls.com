@@ -5,3 +5,4 @@ document.getElementById("aiInput").addEventListener("keypress", e => {
         e.currentTarget.closest("form").submit();
     }
 });
+
