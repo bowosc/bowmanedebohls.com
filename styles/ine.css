@@ -699,10 +699,12 @@ figcaption {
 
     .split{
         width: 100%;
+        padding:0px;
+        margin:0px;
     }
 
     .split li {
-        margin-left: 10px;
+        margin-left: 12px;
     }
 
     .floatsplitleft{
